@@ -1,0 +1,109 @@
+:root {
+  --primarycolor: #1e1d23;
+  --menubar: #2c2b31;
+  --closebtn: #ef2229;
+  --minbtn: #ffc107;
+  --maxbtn: #40f333;
+  --secondarytext: #818181;
+  --primarytext: #fff;
+  --border: #c23c57;
+  --texthover: #b46220;
+  --tagcolor: #9bb64c;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--primarycolor);
+  font-family: "cascadia code", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--secondarytext);
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+img {
+  width: 100%;
+}
+nav {
+  background-color: var(--menubar);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .menu {
+  display: flex;
+  gap: 30px;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li:hover a {
+  color: var(--primarytext);
+}
+.active {
+  color: var(--primarytext);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: solid 1px gray;
+  resize: none;
+}
+label {
+  color: var(--primarytext);
+}
+.formgroup {
+  padding: 20px 0;
+}
+button {
+  padding: 10px 50px;
+  background-color: var(--menubar);
+  color: var(--primarytext);
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+button:hover {
+  background-color: #27262b;
+}
+.card {
+  background-color: var(--menubar);
+  padding: 10px 20px;
+  color: var(--primarytext);
+  margin: 10px 0;
+}
+.card h1 {
+  padding: 10px 0;
+  font-size: 30px;
+}
+.card a {
+  padding: 10px 0;
+  display: inline-block;
+}
+.card a:hover {
+  color: var(--primarytext);
+}
+
+.message {
+  color: var(--primarytext);
+  text-transform: capitalize;
+}
